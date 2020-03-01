@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>New_daY</title>
+<link rel="stylesheet" href="hg.css">
+<link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <form action="php.php" method="POST">
+
+
+        <h1 class="gradient-text">Registration</h1>
+
+        <div class="group">
+            
+            <input type="password" name="q" placeholder="Пароль">
+            <input type="email" name="s"  placeholder="Почта ">
+            <input type="text" name="qw" placeholder="Логин">
+            <input type="text" name="sn" placeholder="Имя">
+            <input type="text" name="gs" placeholder="Фамилия">
+        </div>
+
+
+        <div class="group">
+            <button type="reset" id="res">Clear</button>
+    
+            <button type="submit" id="sub">Enter</button>
+
+            <button>Show password</button>
+
+        </div>
+
+
+    </form>
+          
+        <div class="vremua">
+        <span id="time"></span>
+        </div>
+    
+    <script>
+    setInterval(function () {  
+    date = new Date(),  
+    h = date.getHours(),  
+    m = date.getMinutes(),  
+    s = date.getSeconds(),  
+    h = (h < 10) ? '0' + h : h,  
+    m = (m < 10) ? '0' + m : m,  
+    s = (s < 10) ? '0' + s : s,  
+    document.getElementById('time').innerHTML = h + ':' + m + ':' + s;  
+   }, 1000);</script>
+</body>
